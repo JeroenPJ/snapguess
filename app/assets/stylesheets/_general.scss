@@ -35,15 +35,19 @@ body {
 
 
 h1, h2, h3, h4, h5, p, a, ul, ol, li {
-  font-family: 'Avenir', 'Roboto', Helvetica, sans-serif;
+  font-family: $body-font;
   color: $text-dark;
+}
+
+p, a, ul, ol, li {
+  font-weight: 300;
 }
 
 a {
   text-decoration: underline;
 
   &:hover {
-    font-weight: bold;
+    font-weight: 500;
     color: $text-dark;
   }
 }
