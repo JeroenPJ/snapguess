@@ -1,0 +1,9 @@
+<div class="category-container">
+  <% @categories.each do |category| %>
+    <% if @redirect == :create %>
+      <%= link_to category.name.capitalize, guesses_path(category_id: category.id), method: :post, class: "category" %>
+    <% else %>
+      <%= link_to category.name.capitalize, guess_path(@guess, category_id: category.id), method: :patch, class: "category" %>
+    <% end %>
+  <% end %>
+</div>

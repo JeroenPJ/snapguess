@@ -1,0 +1,7 @@
+<h1>Leaderboard</h1>
+
+<ol>
+  <% @users.each do |user| %>
+    <li class="<%= 'highlighted' if user == current_user %>"><%= user.email %>, score: <%= user.full_score %></li>
+  <% end %>
+</ol>

@@ -1,7 +1,7 @@
 <h1>Snapguess</h1>
 
 <% if current_user %>
-  <%= link_to "Vote", vote_path %>
+  <%= link_to "Nieuwe snap? Waag een gok!", new_guess_path %>
 <% else %>
   <%= link_to "Login", new_user_session_path %>
 <% end %>

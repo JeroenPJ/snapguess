@@ -3,4 +3,14 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def correct
+  end
+
+  def incorrect
+  end
+
+  def leaderboard
+    @users = User.all.order(score: :desc)
+  end
 end
