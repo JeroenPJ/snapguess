@@ -1,17 +1,17 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    Snapguess
+  <%= link_to root_path, class: "logo" do %>
+    Snapguess<span style="font-size: 12px; color: grey; margin-left: 5px">BETA</span>
   <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right">
     <% if user_signed_in? %>
       <!-- Links when logged in -->
-      <%= link_to "Nieuwe gok", new_guess_path, class: "navbar-wagon-item" %>
+      <%= link_to "Nieuwe gok", new_guess_path %>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to "Login", new_user_session_path, class: "navbar-wagon-item" %>
+      <%= link_to "Login", new_user_session_path %>
     <% end %>
   </div>
 

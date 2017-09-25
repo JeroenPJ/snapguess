@@ -1,0 +1,17 @@
+.category-container {
+  border: 1px solid $yellow-dark;
+  border-bottom: none;
+
+  .category {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+
+    padding-left: 10px;
+
+    border-bottom: 1px solid $yellow-dark;
+
+    color: $text-dark;
+  }
+}
