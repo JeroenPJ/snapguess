@@ -1,4 +1,18 @@
-<div class="category-container">
+<%
+if @redirect == :create
+  page_title = "Deze snap is een..."
+  page_tagline = "Wat zal het deze keer zijn... Spannend!"
+else
+  page_title = "En het was een..."
+  page_tagline = "Open nu de snap. Wat was het?"
+end
+%>
+<div class="categories-header">
+  <h2><%= page_title %></h2>
+  <p><em><%= page_tagline %></em></p>
+</div>
+
+<div class="categories-container">
   <% @categories.each do |category| %>
     <% if @redirect == :create %>
       <%= link_to category.name.capitalize, guesses_path(category_id: category.id), method: :post, class: "category" %>
