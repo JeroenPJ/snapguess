@@ -13,5 +13,16 @@
     border-bottom: 1px solid $yellow-dark;
 
     color: $text-dark;
+    text-decoration: none;
+
+    background-color: transparent;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $yellow;
+      text-decoration: none;
+      font-weight: normal;
+    }
   }
 }
